@@ -2,12 +2,6 @@ import { motion } from "framer-motion";
 import React from "react";
 import LoginComponents from "../components/LoginComponents";
 
-const login__style = {
-  height: "100%",
-  backgroundColor: "black",
-  width: "auto",
-  color: "white",
-};
 const pageSlide = {
   initial: {
     opacity: 0,

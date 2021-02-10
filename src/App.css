@@ -1,5 +1,7 @@
 * {
   margin: 0;
+  font-family: GT-Walsheim, "Neue Helvetica W02", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
 }
 .app {
   display: flex;

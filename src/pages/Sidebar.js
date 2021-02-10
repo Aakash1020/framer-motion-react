@@ -4,12 +4,13 @@ import HomeIcon from "@material-ui/icons/Home";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import "./styles/Sidebar.css";
+import Home from "./Home";
 
 const sidebar__style = {
   display: "grid",
   boxShadow: "0px 1px 10px rgba(0,0,0,0.7)",
   height: "100vh",
-  width: "80%",
+  width: "99%",
   justifyContent: "space-evenly",
   placeItems: "center",
 };
@@ -25,27 +26,29 @@ const icon__style = {
 
 const Sidebar = () => {
   return (
-    <section style={sidebar__style}>
-      <NavLink to="/login" exact>
-        <div style={stylebar__components}>
-          <HomeIcon style={icon__style} />
-        </div>
-      </NavLink>
-      <NavLink to="/signup" exact>
-        <div style={stylebar__components}>
-          <ShoppingCartIcon style={icon__style} />
-        </div>
-      </NavLink>
+    <>
+      <section style={sidebar__style}>
+        <NavLink to="/" exact>
+          <div style={stylebar__components}>
+            <HomeIcon style={icon__style} />
+          </div>
+        </NavLink>
+        <NavLink to="/signup" exact>
+          <div style={stylebar__components}>
+            <ShoppingCartIcon style={icon__style} />
+          </div>
+        </NavLink>
 
-      <NavLink to="/profile" exact>
-        <div style={stylebar__components}>
-          <AccountCircleIcon
-            style={icon__style}
-            className="sidebar__menuIcon"
-          />
-        </div>
-      </NavLink>
-    </section>
+        <NavLink to="/profile" exact>
+          <div style={stylebar__components}>
+            <AccountCircleIcon
+              style={icon__style}
+              className="sidebar__menuIcon"
+            />
+          </div>
+        </NavLink>
+      </section>
+    </>
   );
 };
 

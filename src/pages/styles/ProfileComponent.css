@@ -1,0 +1,31 @@
+.gradient {
+  background-image: linear-gradient(
+    90deg,
+    #72f,
+    #c1b,
+    rgb(0, 225, 255),
+    rgb(55, 0, 255)
+  );
+  background-size: 300% 100%;
+  animation: Anim 3s ease infinite;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+@keyframes Anim {
+  0% {
+    background-position: 0%;
+  }
+  30% {
+    background-position: 20%;
+  }
+  50% {
+    background-position: 50%;
+  }
+  70% {
+    background-position: 70%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}

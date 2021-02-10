@@ -8,6 +8,7 @@ function SignupComponent() {
     height: "100vh",
     width: "100%",
     placeItems: "center",
+    backgroundColor: "black",
   };
   const centered = {
     display: "grid",
@@ -18,6 +19,7 @@ function SignupComponent() {
 
   const elements = {
     fontSize: "4rem",
+    color: "white",
   };
 
   return (

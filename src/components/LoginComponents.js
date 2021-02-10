@@ -5,6 +5,7 @@ function LoginComponents() {
     display: "grid",
     height: "100vh",
     width: "100%",
+    backgroundColor: "black",
     placeItems: "center",
   };
   const welcom__text = {
@@ -13,6 +14,7 @@ function LoginComponents() {
     height: "500px",
     width: "auto",
     placeItems: "center",
+    color: "white",
   };
 
   return (
